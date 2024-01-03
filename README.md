@@ -11,7 +11,7 @@
   </div>
 
 
-+ The project represents my improvement and study on Programming and Math to achieve my first goal in programming: Doing a C DONUT rotating in the screen
++ The project represents my improvement and study on Programming and Math to achieve my first goal in programming: Doing a C DONUT rotating on the screen<br><br>
 
  + I will use C++ to the first model, I think it will help me to do math operations and display the model on the screen, 
 also, it will help me to organize my code using classes <br><br>
