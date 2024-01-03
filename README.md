@@ -29,9 +29,8 @@ Also, the projects implies in modeling a donut in every programming language tha
 
 The repository is organized in the follow way
 ===
-<div align="center">
- 
- ~~~
+
+~~~
 donut
  ├── C-Programming
  │      ├── 2D-geometry
@@ -46,4 +45,3 @@ donut
  │             └── Math-Develop     
  └── Other-Languages
 ~~~
-</div>
