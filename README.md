@@ -10,6 +10,7 @@ JS, Java, C#, PHP, Assembly, etc.
 
 This repository is planned to be organized that way:
 
+<p>
 donut
  ├── C-Programming
  │      ├── 2D-geometry
@@ -23,6 +24,4 @@ donut
  │             ├── Math-Proves
  │             └── Math-Develop     │
  └── Other-Languages
-
- 
-
+</p>
