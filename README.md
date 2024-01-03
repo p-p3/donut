@@ -1,8 +1,8 @@
 C DONUT MODEL
 =============
 
-
-I will use C++ to the first model, I think it will help me to do math operations and display the model on the screen
+I will use C++ to the first model, I think it will help me to do math operations and display the model on the screen, 
+also, it will help me to organize my code using classes
 The main goal is to achieve a ridiculously good (in every way, memory, CPU performance, speed, etc) C DONUT Model
 
 After that, I will make a model of a donut in every programming language that I like/I am studying: 
