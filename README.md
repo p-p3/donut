@@ -1,16 +1,17 @@
-THE PRESENT REPOSITORY SHOWS THE IMPROVMENT THAT I AM DOING TO ACHIEVE THE FIRST GOAL I HAD IN PROGRAMMING: DOING A C DONUT 
-===========================================================================================================================
+C DONUT MODEL
+=============
+
 
 I will use C++ to the first model, I think it will help me to do math operations and display the model on the screen
 The main goal is to achieve a ridiculously good (in every way, memory, CPU performance, speed, etc) C DONUT Model
 
 After that, I will make a model of a donut in every programming language that I like/I am studying: 
 
-JS, Java, C#, PHP, Assembly, etc.
+JavaScript, PHP, Java, C#, Assembly, etc.
 
-This repository is planned to be organized that way:
-
-<p>
+The repository is organized in the follow way
+===
+~~~
 donut
  ├── C-Programming
  │      ├── 2D-geometry
@@ -24,4 +25,4 @@ donut
  │             ├── Math-Proves
  │             └── Math-Develop     │
  └── Other-Languages
-</p>
+~~~
