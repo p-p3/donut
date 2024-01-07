@@ -1,0 +1,16 @@
+Now, the idea is to do a algorithm (a function) that allows me draw the points that connects two points 
+
+ .  .  .  .  .  .  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .
+ .  .  D  /  /  C  .  .  .  .
+ .  .  /  .  .  /  .  .  .  .
+ .  .  /  .  .  /  .  .  .  .
+ .  .  A  /  /  B  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .
+ .  .  .  .  .  .  .  .  .  .
+
+ I want a function that receives the A and B (for example) and add to <coord_plane> the '/' characters 
+ that connects both points. I do not want to store these points on the <coord_plane>. The reason is that
+ only with A and B, I can find these same points again (with the same algorithm).
