@@ -18,12 +18,10 @@ also, it will help me to organize my code using classes <br><br>
 
  + The main goal is to achieve a ridiculously good (in every way, memory, CPU performance, speed, etc) C DONUT Model.
 
-<br><br>
-
 <div align="center">
-Also, the projects implies in modeling a donut in every programming language that I am studying: 
+Also, the projects implies in modeling a donut in every programming language that I am studying
  
-```JavaScript``` ```PHP``` ```Java``` ```C#``` ```Assembly```
+```C``` ```C++``` ```JavaScript``` ```PHP``` ```Java``` ```C#``` ```Assembly```
 </div>
 <br><br>
 
@@ -45,3 +43,5 @@ donut
  │             └── Math-Develop     
  └── Other-Languages
 ~~~
+
+OBS: some of the Math Theory could be in portuguese (I'am a brazilian). I'll translate it to english in the future :)
