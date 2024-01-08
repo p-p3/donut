@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <cstdlib>
 
 #define PI acos(-1)
 #define S 10
@@ -28,6 +29,7 @@ struct Point
 	}
 };
 
+void findLineSegAB(char argcoord_plane[S][S]);
 void printGraph(char argcoord_plane[S][S]);
 inline float degreesToRadian(float dregree);
 
@@ -44,14 +46,29 @@ int main (void)
 		}
 	}
 
-	A.plotPoint(coord_plane);
-	B.plotPoint(coord_plane);
-	C.plotPoint(coord_plane);
-	D.plotPoint(coord_plane);
+	// A.plotPoint(coord_plane);
+	// B.plotPoint(coord_plane);
+	// C.plotPoint(coord_plane);
+	// D.plotPoint(coord_plane);
+
+
 
 	printGraph(coord_plane);
 
 	return 0;
+}
+
+void findLineSegAB(char argcoord_plane[S][S], Point *A, Point *B)
+{
+	if (A -> x != B -> x && A -> y && B -> y)
+	{
+		for (int j = 0; j >= B->x; j++)
+		{
+			argcoord_plane[j][A -> x + tan(std::abs((B->y - A->y))/std::abs((B->x - A->x)))];
+		}
+	}
+
+	return;
 }
 
 void printGraph(char argcoord_plane[S][S])
