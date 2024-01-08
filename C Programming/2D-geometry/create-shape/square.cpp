@@ -4,6 +4,8 @@
 #define PI acos(-1)
 #define S 10
 
+void findPathAB(char coord_plane[S][S]);
+
 struct Point
 {
 	short int x, y;
