@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 #include <cstdlib>
+#include <vector>
 
 #define PI acos(-1)
 #define S 10
 
-void findPathAB(char coord_plane[S][S]);
 
 struct Point
 {
@@ -31,14 +31,18 @@ struct Point
 	}
 };
 
-void findLineSegAB(char argcoord_plane[S][S]);
+void findLineSegAB(char argcoord_plane[S][S], Point *A, Point *B);
 void printGraph(char argcoord_plane[S][S]);
 inline float degreesToRadian(float dregree);
 
 int main (void)
 {
 	char coord_plane[S][S];
-	struct Point A(2, 2), B(5, 2), C(5, 5), D(2, 5);
+	// struct Point A(2, 2), B(5, 2), C(5, 5), D(2, 5); 
+
+
+	Point A(1, 1), B(6, 6);
+
 
 	for (short int i = 0; i < S; i++)
 	{
@@ -47,16 +51,12 @@ int main (void)
 			coord_plane[i][j] = '.';
 		}
 	}
+	
+	A.plotPoint(coord_plane);
+	B.plotPoint(coord_plane);
 
-	// A.plotPoint(coord_plane);
-	// B.plotPoint(coord_plane);
-	// C.plotPoint(coord_plane);
-	// D.plotPoint(coord_plane);
-
-
-
+	findLineSegAB(coord_plane, &A, &B);
 	printGraph(coord_plane);
-
 	return 0;
 }
 
@@ -64,9 +64,9 @@ void findLineSegAB(char argcoord_plane[S][S], Point *A, Point *B)
 {
 	if (A -> x != B -> x && A -> y && B -> y)
 	{
-		for (int j = 0; j >= B->x; j++)
+		for (int j = A -> x; j <= B->x; j++)
 		{
-			argcoord_plane[j][A -> x + tan(std::abs((B->y - A->y))/std::abs((B->x - A->x)))];
+			argcoord_plane[int(round(A -> x + tan(std::abs((B->y - A->y))/std::abs((B->x - A->x)))))][j] = '/';
 		}
 	}
 
@@ -79,7 +79,7 @@ void printGraph(char argcoord_plane[S][S])
 	{
 		for (short int j = 0; j < S; j++)
 		{
-			printf(" %c", argcoord_plane[i][j]);
+			printf("  %c", argcoord_plane[i][j]);
 		}
 		printf("\n");
 	}	
